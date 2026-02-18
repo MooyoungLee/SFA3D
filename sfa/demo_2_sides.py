@@ -37,9 +37,9 @@ if __name__ == '__main__':
     configs = parse_demo_configs()
 
     # Try to download the dataset for demonstration
-    server_url = 'https://s3.eu-central-1.amazonaws.com/avg-kitti/raw_data'
-    download_url = '{}/{}/{}.zip'.format(server_url, configs.foldername[:-5], configs.foldername)
-    download_and_unzip(configs.dataset_dir, download_url)
+    # server_url = 'https://s3.eu-central-1.amazonaws.com/avg-kitti/raw_data'
+    # download_url = '{}/{}/{}.zip'.format(server_url, configs.foldername[:-5], configs.foldername)
+    # download_and_unzip(configs.dataset_dir, download_url)
 
     model = create_model(configs)
     print('\n\n' + '-*=' * 30 + '\n\n')
